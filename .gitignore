@@ -1,0 +1,8 @@
+.idea/
+.grep_text_search.txt
+.cache
+*.sublime-project
+*.sublime-workspace
+*~
+.DS_Store
+Desc.md

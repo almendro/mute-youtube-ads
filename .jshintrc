@@ -1,0 +1,20 @@
+{
+  // Details: https://github.com/victorporof/Sublime-JSHint#using-your-own-jshintrc-options
+  // Example: https://github.com/jshint/jshint/blob/master/examples/.jshintrc
+  // Documentation: http://www.jshint.com/docs/
+  "indent"   : 1,
+  "maxerr"   : 250,
+  "laxbreak" : true,
+  "laxcomma" : true,
+  "newcap"   : false,
+  "unused"   : true,
+  "noempty"  : true,
+  "latedef"  : true,
+  "browser"  : true,
+  "strict"   : true,
+  "node"     : true,
+  "globals"  : {
+    "WebKitMutationObserver" : false,
+    "MutationObserver" : false
+  }
+}
