@@ -35,11 +35,15 @@ _Tested on Firefox 35+ (GreaseMonkey) and Google Chrome 41+ with Tampermonkey. I
 
 ## Known Issues
 
+* When I've tried this with TamperMonkey, it sometimes doesn't work when I use it alongside other userscripts for Youtube, [Yays!](http://eugenox.appspot.com/script/yays) especially. It this happens to you try changing the order in which they get executed, and put this script **last** in order, or atleast make sure it's the last one loaded for Youtube. This solves the issue for me.
+  - It could also be that TamperMonkey hadn't executed my script at all for some reason, who knows...
+  - If you know how, please check the console and copy the output before posting an issue.
 * Does not work with Flash, and I'm not planning on adding support for it because Youtube's Api has it listed as "old" (a.k.a. dead).
 
 ## Reporting bugs
 
 Please report all issues [here on Github](https://github.com/elundmark/mute-youtube-ads/issues).
+** If you know how, please check the console and copy the output before posting an issue, thx! **
 
 My email and info: [https://github.com/elundmark](https://github.com/elundmark)
 
