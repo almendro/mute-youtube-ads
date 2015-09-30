@@ -1,21 +1,22 @@
 // ==UserScript==
 // @name         Mute Youtube Ads
 // @description  Mutes the volume of Youtube videos whenever an ad is playing - Still in Beta, and only supports HTML5, please report any bugs you encounter
-// @version      0.1
-// @date         2015-04-13
+// @version      0.2
+// @date         2015-09-30
 // @autor        Erik Lundmark
-// @contact      mail@elundmark.se
+// @contact      e@3r1k.se
 // @namespace	 http://elundmark.se/code/
 // @license      MIT; http://opensource.org/licenses/MIT
 // @supportURL   https://github.com/elundmark/mute-youtube-ads/issues
-// @updateURL    http://elundmark.se/_files/js/mute-youtube-ads/mute-youtube-ads.meta.js
-// @downloadURL  http://elundmark.se/_files/js/mute-youtube-ads/mute-youtube-ads.user.js
+// @updateURL    http://f.3r1k.se/js/mute-youtube-ads/mute-youtube-ads.meta.js
+// @downloadURL  http://f.3r1k.se/js/mute-youtube-ads/mute-youtube-ads.user.js
 // @include      http*://embed.youtube.com/*
 // @include      http*://embed.youtube-nocookie.com/*
 // @include      http*://www.youtube.com/*
 // @include      http*://www.youtube-nocookie.com/*
 // @icon         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAA6lBMVEUAESDeLS3fLS3gLS3eLi7fLi7gLi7eLy/fLy/gLy/hLy/iLy/jLy/kLy/lMDDmMDDnMDDoMDDpMDDqMTHrMTHsMTHtMTHuMjLvMjLwMjLxMjLyMjL0MzP1MzP2MzP3MzP4NDT5NDT6NDT8NTX9NTX+NTX/NTX/Njb/Nzf/ODj/OTn/Ojr/Ozv/PDz/PT3/Pj7/Pz//QED/QUH/QkL/Q0P/RET/RUX/Rkb/R0f/SEj/SUn/Skr/S0v/Tk7/T0//UFD/U1P/VVX/YWH/d3f/eXn/fHz/gYH/ior/np7/p6f/vLz/1tb/4+P///+Oisu+AAAAAXRSTlMAQObYZgAABGRJREFUeAHsxrENA0EMA8GXdCK9/Tds4CowjA850TwRERERv0AIaqVV9UB7XJS5bscD7tKe2Y8lxPMfMetTvGp6m8O3XXPtT9uG4rDBMfKfhAYCJUu6hHVdF8qlZAWDZe++rLts/v5fZ8hDJ1Fqy+BK9hued+cH/PIc+ehIirVHqtZpnTh5NFARfnb2FcJO6vr7BHOe4aFiPEehCaKWQkAdtOoWgEO4qHkIUBM1VqA6E1AXbt0CkKtfPVAvaNQtgPpgdQvAxjL04vtIwG/2FWiYFoh4yrqHYppbAd+SAF+29xsCZkuAL/brhSjF6XQ6KRLgb1AEKy2w4DwsFIjOUURZgXuuCqifEQtbAu+5RgBrTlzaEbjnWoGLR4O1FYE5zxB4GwvuILjjxLhQwCtRf1kCb3jK7U5RsjQvMOM6Ad4XwRk9hOi2aD1slshfJ/AdBGMuCYo6kV8if51ANIEg4JKbghFwS+SvE+DhUIS3XDIr2Jp7JfLXCvB5WgUrGa4KevHB/adQIBqIeKKE+RyyJZ1yjcDpkguoDjuRDKefVQOrzSM8Q2AuPniRDjqXbF4q5bKBhmaRwJrnEtJTWZ1hyzsuSfvhawoH2hGAAQH+Pl2HQ77jgwj7NGLfQIPTMCEQv03rTj72uCOKgubBRDsLmAkBvjwVARX+WNkXzLXHQxgR4K+UurtPayKiWWG5BmjvM1YWgJtoj1bETAlESv9dd0VRxvTFKgRGAAahnPrpzKOatC1AW5+2FAi/wJaNFDi3LUANlwSuny7Jcb8KgfnTnMN0UqykwMsqBGbqCCgCgyoEJorA1dPfxhdVCIhm3KVZMHzaGON2FdOwB+BKCqzTnGO+A5YFqPd9S43oDMAwlhE0mFiMaAswU44jdxFF+bhmlmO+7ihfnirHo4XlR0CT8DX13rQRLhWdPAxsyegpr5RdYJd+emddILzEllGopHzJJdefsykN40eyBBbxljEEHziPU6IvRTiNd0RtQ+cCajMkoDCjjnMQhxzNeoFG4JoW/oNgBx1OOxvN0aycQOuw43kvMC3gHyaA03WxwKAvOIOkn3KRJ+ABJcZAIzBIUv6R+7Cfk/8xMQKCdlAg0E92DCH4QYbG/k3XDYoEJJeUvxkBYlUgQLzCj4kNgfMgQ6A7Go2+kgKSXxOzAsRKFSBIgLAkcB7kC/SSTP42/MZkmSuAVZLBX/kvDk9Qhk4QR8hhlnzCn+38l1YwT5A84w/d62sf5pkmCh+1725hg4/6CUDYenX7U6LSr1jgl+QZ/w4rfHmt5E9caa5QWM2fGCELx4hB+VZM1/hqEmjSNR5LAr99rRegC22WBB6Ad1oBx67Ag4jGWgHChsADoBho7zT6MMdFkvK7jCckoLvS6Nd1j4uo7SodwerLvwaFRs7NYheVwFpOLh4Y7MJczykE8Bhjhu+2M6/pOqXxvRbQTO/3nzThg7UaYK4PdyvaANLL/T5rNsC2X2kALdfXJ3rkyJEjR44cOUL8Bzo0ZR7xsYEYAAAAAElFTkSuQmCC
 // @grant        none
+// @noframes
 // ==/UserScript==
 
 (function () {

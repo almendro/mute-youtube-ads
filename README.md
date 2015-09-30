@@ -1,3 +1,5 @@
+# **This project is no longer maintained**
+
 # Mute Youtube Ads
 
 Very simple idea: Mute the volume whenever an ad is playing. Applies to both the website and embeds. If you still use Flash to view videos, sorry, you're left out.
@@ -12,9 +14,8 @@ _This project is mainly maintained on [github](https://github.com/elundmark/mute
 2. Install the userscript itself from any of the following repositories:
 	* **[openuserjs.org](https://openuserjs.org/?q=mute+youtube+ads)**
 	* **[greasyfork.org](https://greasyfork.org/en/scripts/search?q=mute+youtube+ads)**
-	* **[monkeyguts.com](https://monkeyguts.com/index.php?search=mute+youtube+ads)** _supplies secure updates_
 	* And you can of course also install it from this repository.
-3. Disable _Require Secure Updates_ in your userscript engine to enable automatic updates, if not installed through [monkeyguts.com](https://monkeyguts.com/code.php?id=194). However, doing this is less secure, so be careful.
+3. Disable _Require Secure Updates_ in your userscript engine to enable automatic updates.
 
 _Tested on Firefox 35+ (GreaseMonkey) and Google Chrome 41+ with Tampermonkey. I have not checked if it works with Chrome's built-in userscript installer, yet. But it should._
 
